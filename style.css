@@ -1,0 +1,43 @@
+/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css?family=Russo+One&display=swap");
+
+.container {
+  background: linear-gradient(90deg, black 50%, yellow 50%);
+  height: 400px;
+  width: 800px;
+  text-align: center;
+  position: relative;
+  box-shadow: 2px 1px 3px #333;
+  margin: 10rem auto;
+  border-radius: 8px;
+}
+h1 {
+  color: yellow;
+  font-size: 3.5rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: "Russo One", cursive;
+  width: 500px;
+  mix-blend-mode: difference;
+  animation: move linear infinite 10s;
+}
+@keyframes move {
+  0% {
+    transform: translate(-400px, -90px);
+  }
+  25% {
+    transform: translate(-220px, 0px);
+  }
+  50% {
+    transform: translate(-60px, -90px);
+  }
+  75% {
+    transform: translate(-220px, -180px);
+  }
+  100% {
+    transform: translate(-400px, -90px);
+  }
+}
